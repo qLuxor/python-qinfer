@@ -47,7 +47,8 @@ import numpy as np
 # we need to import it in a way that we don't propagate exceptions if QuTiP
 # is missing or is too early a version.
 from qinfer.utils import get_qutip_module
-qt = get_qutip_module('3.2')
+from qinfer.tomography import minQuTip
+qt = get_qutip_module(minQuTip)
 
 import warnings
 
